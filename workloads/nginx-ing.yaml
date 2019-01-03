@@ -14,5 +14,5 @@ spec:
         backend:
           serviceName: nginx-service
           servicePort: http
-          servicePort: 8081
-          # servicePort: 31765
+          # servicePort: 8081
+          servicePort: 31765
