@@ -1,15 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: cheese
+  name: nginx-ingress
   annotations:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-  - host: localhost
+  - host: nginx
     http:
       paths:
-      - path: /
+      - path: /nginx
         backend:
           serviceName: nginx-service
-          servicePort: http
+          # servicePort: http
+          servicePort: 31765
