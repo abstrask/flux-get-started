@@ -9,8 +9,8 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
-      # - path: /nginx
+      # - path: /
+      - path: /nginx
         backend:
           serviceName: nginx-service
           servicePort: http
