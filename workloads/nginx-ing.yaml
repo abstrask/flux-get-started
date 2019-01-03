@@ -7,8 +7,7 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
 spec:
   rules:
-  - host: nginx
-    http:
+  - http:
       paths:
       - path: /nginx
         backend:
