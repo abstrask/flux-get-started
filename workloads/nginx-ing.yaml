@@ -13,6 +13,6 @@ spec:
       - path: /nginx
         backend:
           serviceName: nginx-service
-          servicePort: http
+          # servicePort: http
           # servicePort: 8081
           servicePort: 31765
