@@ -52,5 +52,6 @@ spec:
       name: web
     - protocol: TCP
       port: 8080
+      target_port: 8080
       name: admin
   type: NodePort
