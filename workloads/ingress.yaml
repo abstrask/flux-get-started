@@ -11,15 +11,11 @@ spec:
   #   http:
   - http:
       paths:
-      # - path: /
-      - path: /dashboard
-        backend:
+      - backend:
           serviceName: kubernetes-dashboard
-          # servicePort: 443
           servicePort: 8001
-      - path: /nginx
-        backend:
+        path: /dashboard
+      - backend:
           serviceName: nginx-service
-          # servicePort: http
           servicePort: 8081
-          # servicePort: 31765
+        path: /nginx
