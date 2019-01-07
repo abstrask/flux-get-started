@@ -7,9 +7,8 @@ metadata:
     traefik.frontend.rule.type: PathPrefixStrip
 spec:
   rules:
-  # - host: traefik.local
-  #   http:
-  - http:
+  - host: traefik.local
+    http:
       paths:
       - backend:
           serviceName: kubernetes-dashboard
